@@ -1,0 +1,478 @@
+body{
+    margin:0px;
+    padding:0px;
+    width:auto;
+    background-color:rgb(26, 26, 26);
+    background-image: linear-gradient(rgb(19, 18, 18), rgb(29, 28, 28));
+    position:relative;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#hamburger{
+    padding:0px;
+    margin-top:-93px;
+    text-align:right;
+    height:10px;
+    line-height:70px;
+    padding-top:10px;
+    
+   
+}
+
+#hambLinks{
+    
+    margin: 0 30px 0 0;
+    display:none;
+}
+
+#hambLinks a{
+    margin-top:30px;
+    color:white;
+    clear:right;
+    text-decoration:none;
+    margin: 0 0px;
+    line-height:70px;
+    background-color:rgba(0, 0, 0, 0.377);
+}
+
+#hambLinks a:hover{
+background-color:rgba(255, 255, 255, 0.726);
+color:black;
+}
+
+label{
+    margin: 0 40px 0 0 ;
+    font-size: 26px;
+    line-height:70px;
+    display:none;
+    width:26px;
+    float:right;
+}
+
+#toggle{
+    display:none;
+}
+
+.main-section{
+    
+    min-height: 800px;
+    background-image: url(/Images/TurnTable.jpg);
+    overflow: hidden;
+    background-position: center  bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: slide 20s infinite;
+    
+}
+
+.main-section h1{
+    font-size:30px;
+}
+
+
+.main-section p{
+    font-size:100px;
+    padding-top:150px;
+    text-align:center;
+    
+}
+    
+.container{
+    margin-right:100px;
+    margin-left: 100px;
+}
+
+.container li{
+    padding-right:50px;
+    display:inline;
+    float:right;
+    
+}
+
+.navbar  ul{
+    position:fixed;
+    top:26px;
+    right:100px;
+    animation: menumove 1s;
+
+}
+
+
+
+.navbar a{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration:none;
+    color:black;
+    transition-timing-function: ease-in-out;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:white;
+    
+}
+
+.navbar img {
+    animation:logoslide 2s;
+}
+
+
+
+
+
+
+
+
+#btnwrap{
+    text-align: center;
+    margin:20px;
+}
+
+.btn{
+    
+   background-color: rgba(0, 0, 0, 0);
+   border:none;
+   color:white;
+   font-size: 20px;
+   padding:20px;
+   border-radius:10px;
+   border:2px solid white;
+    transition-timing-function: ease-in-out;
+   transition:0.3s;
+   animation: opacity 4s;
+   animation: mvment 3s;
+     }
+
+.btn:hover{
+    background:rgba(255, 255, 255, 0.87);
+    color:black;
+    
+   
+    
+
+}
+
+
+
+
+
+
+
+
+
+#fadetext{
+    animation: color-change  20s infinite;
+    font-size:6vw;
+    animation: opacity 5s;
+}
+
+#artists{
+    color:white;
+    margin:100px;
+    height:auto;
+}
+
+#artists{
+    text-align:center;
+}
+
+#artists h1{
+    font-size:50px;
+}
+
+.bsection{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(20em,1fr));
+    grid-template-rows:repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 2px;
+    
+   
+   
+ 
+}
+
+.bsection img{
+    max-width: 100%;
+    height:auto;
+    transition-timing-function: ease-in-out;
+    transition: 0.8s;
+    /*box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.096) ;*/
+    animation: pop 2s infinite;
+    
+   
+ 
+}
+
+
+
+
+.bsection p{
+    background-color:red;
+}
+
+
+
+.bsection img:hover{
+    transform: scale(1.02);
+    
+ 
+}
+
+#about{
+    width:auto;
+    min-height:800px;
+    background-image: url(/Images/Aboutpic.jpeg);
+    background-position:center center;
+    background-attachment: fixed;
+    
+}
+
+
+.aboutContain{
+    margin:200px;
+    font-size:20px;
+    padding-top:120px;
+    line-height: 1.8em;
+    text-align: center;
+    
+}
+
+#about h1{
+    text-align:center;
+    font-size:60px;
+    
+}
+
+#contact{
+    width:auto;
+    height:400px;
+    position:absolute;
+    background-position:center center;
+    background-attachment: fixed;
+    color:white;
+    overflow: hidden;
+
+    
+}
+
+.contactInfo{
+    width:auto;
+    height:100%;
+    margin:60px;
+    display:grid;
+    grid-template-columns: 2fr 4fr 1fr;
+    grid-gap:60px;
+    border: 1px white solid;
+    
+    
+}
+
+.contactInfo h1{
+    font-size: 50px;
+    padding-top:80px;
+    padding-left:100px;
+}
+
+.contactInfo p{
+    line-height:2em;
+    padding-top: 60px;
+    padding-left:100px;
+}
+
+#socialLogos{
+    position:absolute;
+    right:100px;
+    top:160px;
+}
+
+#socialLogos li{
+    
+    
+    display:inline;
+    font-size: 50px;
+    padding-right:60px;
+    transition-timing-function: ease-in-out;
+    transition:0.8s;
+}
+
+#socialLogos li:hover{
+    color:rgb(15, 179, 179);
+    
+}
+
+
+@media screen and (max-width:765px){
+
+    .main-section, .navbar, #artists, .bsection, .aboutContain, .contactInfo, .container{
+        margin:0;
+        float:none;
+        text-align:center;
+        position: none;
+    }
+
+.aboutContain {
+     padding-top:20px;
+     padding-bottom:20px;
+ }
+
+ #fadetext {
+     font-size:13vw;
+     padding-right:10px;
+     padding-left:10px;
+ }
+
+ .navbar li{
+    position:none;
+    top:0;
+    right:0;
+    
+    margin:0;
+    padding:0;
+    padding-right:10px;
+    padding-top:60px;
+    text-align:center;
+ }
+
+ label{
+     display:block;
+     cursor:pointer;
+ }
+
+ #hambLinks{
+    margin-top:30px;
+     text-align:center;
+     width:100%;
+     display:none;
+ }
+
+ #hambLinks a {
+     
+     display:block;
+     border-bottom:1px solid rgb(185, 185, 185);
+ }
+
+ #toggle:checked + #hambLinks{
+     
+     display:block;
+     
+ }
+
+ .navbar ul{
+     display:none;
+ }
+
+ 
+    
+ 
+    
+
+
+
+}
+
+
+   
+ 
+
+
+@keyframes slide {
+
+0%{
+    background-image:url(/Images/TurnTable.jpg);
+    
+}
+
+16.6%{
+    background-image:url(/Images/TurnTable.jpg);
+    }
+
+33.2%{
+    background-image:url(/Images/HeadphoneGirl.jpg);
+    
+}
+
+49.9%{
+    background-image:url(/Images/HeadphoneGirl.jpg);
+}
+
+67%{
+    background-image: url(/Images/BlueCasette.jpeg)
+}
+83%{
+    background-image: url(/Images/BlueCasette.jpeg)
+}
+
+}
+
+@keyframes pop {
+
+
+        20%{
+            transform:scale(1.01);
+            
+        }
+    }
+
+@keyframes color-change {
+
+    0%{
+       color:black;
+    }
+    
+    33%{
+        color:white;
+    
+    }
+    
+    67%{
+        color:rgb(181, 10, 233);
+    }
+    
+    }
+
+@keyframes opacity{
+    0%{
+        opacity:0;
+    }
+
+    10%{
+        opacity:0;
+    }
+
+    64%{
+        opacity:1.0;
+    }
+}
+
+@keyframes mvment {
+    
+    0%{
+       top:100px;
+    }
+}
+
+
+@keyframes logoslide {
+
+    0%{
+        opacity:0;
+        
+    }
+
+}
+
+@keyframes menumove{
+    0%{
+        right:-500px;
+        opacity:0;
+    }
+}
+
+
+
+
